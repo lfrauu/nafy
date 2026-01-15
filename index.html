@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>NewArtistsForYou</title>
+  <link rel="stylesheet" href="css/estilos.css">
+</head>
+<body>
+
+<!-- AVISO LEGAL -->
+<div id="avisoLegal" class="aviso">
+  <div class="aviso-caja">
+    <h2>Aviso Legal</h2>
+    <p>
+      Todos los contenidos musicales están protegidos por derechos de autor.
+      Queda prohibida su copia o distribución sin autorización.
+    </p>
+    <button class="btn-aceptar" onclick="aceptarAviso()">Aceptar</button>
+    <button class="btn-rechazar" onclick="rechazarAviso()">Rechazar</button>
+  </div>
+</div>
+
+<!-- LOGIN / REGISTRO -->
+<div class="login-container" id="loginBox">
+  <div class="login-box-index">
+    <button class="btn-form btn-index" onclick="location.href='login.html'">
+      Iniciar sesión
+    </button>
+    <button class="btn-form btn-index" onclick="location.href='registro.html'">
+      Crear cuenta
+    </button>
+  </div>
+</div>
+
+<!-- CONTENIDO PRINCIPAL -->
+<div id="contenidoPrincipal" style="display:none;">
+  <h1>Bienvenido a NewArtistsForYou</h1>
+  <p>Plataforma para artistas musicales emergentes</p>
+  <button onclick="cerrarSesion()">Cerrar sesión</button>
+</div>
+
+<script src="js/jsindex.js"></script>
+</body>
+</html>

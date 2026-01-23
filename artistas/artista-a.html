@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Artista A</title>
+  <link rel="stylesheet" href="../css/estilos.css">
+</head>
+<body>
+<script src="../js/main.js"></script>
+<script>
+  if (sessionStorage.getItem("logueado") !== "true") {
+    alert("Debes iniciar sesión para acceder");
+    window.location.href = "../login.html";
+  } else {
+    document.addEventListener("DOMContentLoaded", () => {
+      document.querySelector(".contenido").style.display = "block";
+    });
+  }
+</script>
+
+<div class="header-artista">
+  <button onclick="window.location.href='../index.html'">Volver al inicio</button>
+</div>
+
+<div class="contenido">
+  <h1>Artista A</h1>
+  <p>Información del artista A.</p>
+  <h3>Canciones</h3>
+  <audio controls>
+    <source src="../audio/cancion1.mp3" type="audio/mpeg">
+    Tu navegador no soporta audio.
+  </audio>
+</div>
+</body>
+</html>

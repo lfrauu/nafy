@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Iniciar sesión</title>
+  <link rel="stylesheet" href="css/estilos.css">
+</head>
+<body>
+
+<div class="login-container">
+  <div class="login-box-form">
+
+    <h2>Iniciar sesión</h2>
+
+    <input
+      type="text"
+      id="loginUsername"
+      placeholder="Usuario"
+      required
+    >
+
+    <div class="password-wrapper">
+      <input
+        type="password"
+        id="loginPassword"
+        placeholder="Contraseña"
+        required
+      >
+    </div>
+
+    <!-- ACCIONES LOGIN -->
+    <div class="login-actions">
+      <label class="recordarme">
+        <input type="checkbox" id="recordarme">
+        Recordarme
+      </label>
+
+      <button class="btn-form" onclick="login()">
+        Entrar
+      </button>
+    </div>
+
+    <p class="login-link">
+      ¿No tienes cuenta?
+      <a href="registro.html">Crear cuenta</a>
+    </p>
+
+  </div>
+</div>
+
+<script src="js/jsauth.js"></script>
+</body>
+</html>

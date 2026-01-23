@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Panel Admin</title>
+  <link rel="stylesheet" href="../css/estilos.css">
+</head>
+<body>
+
+<div class="login-container" id="adminLogin">
+  <div class="login-box-form">
+
+    <h2>Acceso administrador</h2>
+
+    <input
+      type="text"
+      id="adminUser"
+      placeholder="Usuario"
+    >
+
+    <input
+      type="password"
+      id="adminPass"
+      placeholder="Contraseña"
+    >
+
+    <button class="btn-form" onclick="loginAdmin()">
+      Entrar
+    </button>
+
+  </div>
+</div>
+
+<!-- PANEL REAL -->
+<div id="adminPanel" style="display:none;">
+  <h1>Panel de administración</h1>
+
+  <button onclick="logoutAdmin()">
+    Cerrar sesión
+  </button>
+</div>
+
+<script src="x9kP73.js"></script>
+</body>
+</html>

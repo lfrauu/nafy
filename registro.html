@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Crear cuenta</title>
+  <link rel="stylesheet" href="css/estilos.css">
+</head>
+<body>
+
+<div class="login-container">
+  <div class="login-box-form">
+    <h2>Crear cuenta</h2>
+
+    <!-- Nombre de usuario -->
+    <input type="text" id="regUsername" placeholder="Nombre de usuario" required>
+
+    <!-- Correo electrónico -->
+    <input type="email" id="regEmail" placeholder="Correo electrónico" required>
+
+    <div class="password-wrapper">
+      <input type="password" id="regPassword" placeholder="Contraseña" required>
+      <label class="mostrar-password">
+        <input type="checkbox" onclick="togglePassword('regPassword')">
+        Mostrar
+      </label>
+    </div>
+
+    <div class="password-wrapper">
+      <input type="password" id="regPassword2" placeholder="Repite contraseña" required>
+      <label class="mostrar-password">
+        <input type="checkbox" onclick="togglePassword('regPassword2')">
+        Mostrar
+      </label>
+    </div>
+
+    <button class="btn-form" onclick="registro()">Crear cuenta</button>
+
+    <p style="text-align:center; margin-top:15px;">
+      ¿Ya tienes cuenta?
+      <a href="login.html">Iniciar sesión</a>
+    </p>
+  </div>
+</div>
+
+<script src="js/jsauth.js"></script>
+</body>
+</html>

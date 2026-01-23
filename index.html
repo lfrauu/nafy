@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>NewArtistsForYou</title>
+  <link rel="stylesheet" href="css/estilos.css">
+</head>
+<body>
+
+<!-- AVISO LEGAL -->
+<div id="avisoLegal" class="aviso">
+  <div class="aviso-caja">
+    <h2>Aviso Legal</h2>
+    <p>
+      Todos los contenidos musicales de este sitio web, audios, letras, estan protegidas por derechos de autor.
+      Queda prohibida su copia o distribución, comunicación pública o otros usos sin autorización del titular correspondiente.
+      El acceso y uso de esta página web implica la aceptación de estas condiciones.
+      El incumplimiento de estas condiciones podrá generar responsabilidades legales.
+    </p>
+    <button class="btn-aceptar" onclick="aceptarAviso()">Aceptar</button>
+    <button class="btn-rechazar" onclick="rechazarAviso()">Rechazar</button>
+  </div>
+</div>
+
+<div class="login-container" id="loginBox">
+  <div class="login-box-index">
+
+    <p style="margin-bottom:20px; font-size:16px; text-align:center;">
+      Para acceder al contenido de esta web, necesitas iniciar sesión o crear una cuenta.
+    </p>
+
+    <button class="btn-form btn-index" onclick="location.href='login.html'">
+      Iniciar sesión
+    </button>
+
+    <button class="btn-form btn-index" onclick="location.href='registro.html'">
+      Crear cuenta
+    </button>
+
+  </div>
+</div>
+
+<!-- CONTENIDO PRINCIPAL -->
+<div id="contenidoPrincipal" style="display:none;">
+  <h1>Bienvenido a NewArtistsForYou</h1>
+  <p>Plataforma para artistas musicales emergentes</p>
+  <button onclick="cerrarSesion()">Cerrar sesión</button>
+</div>
+
+<script src="js/jsindex.js"></script>
+</body>
+</html>
